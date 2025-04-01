@@ -49,6 +49,9 @@ class Graph {
       if(segmentLength > 0) {
         arcLength = arcLength + segmentLength;
       }
+      textSize(20);
+      fill(255,0,0);
+      text((long)(arcLength)+ "",20,20);
       //println(arcLength);
       if(dot.mag() > outermostPoint.mag()){
        outermostPoint = dot; 
